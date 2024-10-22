@@ -1,0 +1,19 @@
+@use "@/styles/variables.scss" as *;
+
+:root {
+  --background-color: var(--light-grayish-blue);
+  --tasklist-color: var(--very-light-gray);
+  --text-color: var(--very-dark-grayish-blue-2)
+}
+
+
+
+.darkmode {
+  --background-color: var(--very-dark-desaturated-blue);
+  --tasklist-color: var(--very-dark-grayish-blue);
+  --text-color: var(--light-grayish-blue-dark)
+}
+
+body {
+  font-family: var(--body-font);
+}

@@ -1,0 +1,87 @@
+.main-element {
+  display: flex;
+  flex-direction: column;
+  color: var(--text-color);
+
+  header {
+    flex-grow: 0;
+  }
+
+  .taskApp-container {
+    flex-grow: 1;
+    width: 100%;
+    height: calc(100vh - 340px);
+    position: relative;
+    background-color: var(--background-color);
+
+  }
+}
+
+
+.task {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+.task-app {
+
+  width: 70%;
+  min-height: 400px;
+  position: absolute;
+  max-width: 600px;
+  top: -100px;
+  left: 50%;
+  transform: translate(-50%);
+
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+// TASKS ON THE LIST
+.task-list-container {
+  width: 100%;
+  min-height: 40px;
+  margin-top: 30px;
+  padding: 15px;
+  background-color: var(--tasklist-color);
+  box-sizing: border-box;
+
+}
+
+.task-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: var(--tasklist-color);
+  color: var(--text-color);
+}
+
+.task-container.done {
+  text-decoration: line-through;
+}
+
+// FORM
+
+.task-form {
+  background-color: var(--tasklist-color);
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 0;
+}
+
+.task-input {
+  background-color: var(--tasklist-color);
+  color: var(--text-color);
+  flex-grow: 1;
+  font-size: 18px;
+  padding: 14px 22px;
+  width: 70%;
+}
